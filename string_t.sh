@@ -1,7 +1,14 @@
 #!/bin/bash
 
-for file in `ls -l /var/spool/clientmqueue | awk '{print $9}'`
+#s="abc"
+#echo ${s:1:1}
+##exit
+#
+#idc=('j': 'BJ','t': 'TJ', 'g': 'GZ')
+#echo $idc
+
+for file in `cat $1`
 do
-      path="/var/spool/clientmqueue/$file"
-      rm -f $path
+      echo $file
+      echo ${file:8:1}
 done
