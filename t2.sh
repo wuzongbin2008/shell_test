@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo $PWD
+exit 0
+
 cnt=0
 while [ $cnt -lt 24 ]
 do
