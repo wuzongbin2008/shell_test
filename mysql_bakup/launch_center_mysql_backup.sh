@@ -13,7 +13,7 @@ echo "current path = $pwd_path"
 backup_file=$pwd_path"/mysql_db_bak/release_manager_bak_$subffix.sql.gz"
 db_ip="127.0.0.1"
 db_port="3307"
-mysqldump -h $db_ip -P $db_port -u root --password="sina@release&1" --default-character-set=utf8  release_manager|gzip > $backup_file 
+mysqldump -h $db_ip -P $db_port -u root --password="" "@release&1" --default-character-set=utf8  release_manager|gzip > $backup_file
 
 #exit 0
 while [ TRUE ]
