@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "here is date_t.sh :"
+
 function format()
 {
 #    echo "param 0 = "$0
@@ -20,6 +22,6 @@ function format()
     done
 }
 
-#format 3 1
+format 3 1
 
 echo $(date +'%s')
